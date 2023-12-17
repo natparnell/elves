@@ -7,26 +7,28 @@
 <style>
   body, html {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #333;
+    color: white;
   }
   .bg {
-    min-height: 100vh; /* Use viewport height instead of percentage */
-    padding: 50px 0; /* Add padding to the top and bottom */
+    min-height: 100vh; /* Use viewport height */
+    padding-top: 50px; /* Add padding to the top */
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align content to the top */
     align-items: center;
     flex-direction: column;
-    box-sizing: border-box;
   }
   .content {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     max-width: 800px;
-    width: 90%; /* Provide some space on the sides */
-    margin: 0 auto; /* Center the content */
+    width: 90%; /* Allow for some margin on the sides */
+    margin: 0 auto 20px; /* Center the content and add space at the bottom */
     box-sizing: border-box;
   }
   img {
@@ -53,6 +55,7 @@
   <div class="content">
     <h1>Christmas Adventure Awaits!</h1>
     <p>Below is a mystical clue to your Christmas quest. Study it well to discover the secrets of the moor.</p>
+    <!-- The image will be displayed here as part of the clue -->
     <img src="watering.jpg" alt="Mystical Clue">
     <p>Every year the elves gather around this watering hole, where they party alongside the wild horses.</p>
     <p>Notice the features in the image that may guide you to the hidden meeting spot.</p>
